@@ -232,8 +232,7 @@ fieldset {
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct t100  6138  100  6138    0     0  97428      0 --:--:-- --:--:-- --:--:-- 97428
-he color inheritance from `fieldset` elements in IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
