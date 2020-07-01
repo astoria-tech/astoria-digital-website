@@ -387,5 +387,11 @@ a:hover {
   }
 }
 
+hr {
+  width: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 /* vim: fdm=marker
  */
