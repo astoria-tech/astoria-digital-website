@@ -399,6 +399,10 @@ a:focus {
   text-decoration: underline;
 }
 
+abbr {
+  cursor: help;
+}
+
 svg {
   fill: currentColor;
 }
@@ -513,6 +517,20 @@ a:hover .callout__text {
 
 .project__icon {
   margin-right: 2ch;
+}
+
+.project__icon--wip {
+  position: relative;
+  top: -2em;
+  transform: rotate(-20deg);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.project__icon--wip svg {
+  width: 2em;
+  height: 2em;
+  margin-left: 2ch;
 }
 
 .project__item-site {
