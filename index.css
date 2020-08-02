@@ -542,6 +542,45 @@ a:hover .callout__text {
 
 /* }}} */
 
+/* Team {{{ */
+
+.team-link {
+  padding: 3em;
+}
+
+.team-link .callout {
+  justify-content: center;
+}
+
+.team {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.team__title {
+  flex: 1 0 100%;
+}
+
+.team__member {
+  position: relative;
+  transition: transform 100ms ease-in;
+}
+
+.team__member:hover {
+  transform: rotate(20deg);
+}
+
+.team__member:nth-child(even):hover {
+  transform: rotate(-20deg);
+}
+
+/* }}} */
+
 /* Grid specific {{{ */
 
 @media screen and (min-width: 700px) {
