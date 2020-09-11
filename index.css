@@ -356,7 +356,7 @@ template {
   --highlight-yellow: #ffda00;
   --highlight-blue: #2077c7;
   --highlight-orange: #ff7a00;
-  --highlight-navy: #2b2e43;
+  --highlight-vellum: #DAD7CF;
 }
 
 * {
@@ -509,8 +509,9 @@ a:hover .callout__text {
   background-color: var(--highlight-orange);
 }
 
-.project__header--police {
-  background-color: var(--highlight-navy);
+.project__header--foil {
+  background-color: var(--highlight-vellum);
+  color: #000;
 }
 
 .project__header--more {
