@@ -7,10 +7,11 @@
     <meta name="description" content="Digital volunteers for the community.">
     <title>Astoria Digital</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="page-home">
+
     <div hidden>
       <svg xmlns="http://www.w3.org/2000/svg">
         <symbol role="img" id="icon--ama" viewBox="0 0 8.467 8.467"><title>Bridge icon</title><path d="M0 0V4.762h.012v.794H0v2.91h8.467V0H0zm.265 1.323h1.058v.264h.794v.265h.529v.265h.529v.264h.265v.265h.264v.264h.265v.265h.264v.265h.265v1.322H3.175v.265h-.794v.265H3.44v-.265h1.058v.265H3.44v.264H.276v-.264h.518v-.265H.276v-.265h.518V2.646h-.53V1.323zm2.91 3.44v-.265H2.91v-.265h-.264V3.97H2.38v.793h.794zm1.323-3.176h1.587v6.615H4.762V1.59h-.264v-.002zm1.852 0h.794V5.556h1.058v2.646H6.35V1.587zm1.058.53h.794v.793h-.265v.265h-.264v.265h-.265V2.117zm-6.35 1.058V4.762h1.059V3.44h-.53v-.265h-.529zm4.234 0v.265h-.265v1.322h.794V3.44h-.265v-.265h-.264zM1.058 5.027v.265h1.059v-.265H1.058zm2.646.53h.794v1.587h-.265V6.35H3.97v-.53h-.265v-.264z"/></symbol>
@@ -25,90 +26,104 @@
       </svg>
     </div>
 
-    <main class="content">
-
-      <!-- site header -->
+    <header class="site-header">
       <h1 class="site-header__title">
         <a href="/" class="site-header__text">astoria.digital</a><span class="site-header__cursor">_</span>
       </h1>
-
       <p class="site-header__slogan">Digital volunteers for the community</p>
-
-      <a href="mailto:team@astoria.digital?subject=feedback" class="site-header__contact callout">
-        <svg class="icon project__icon"><use xlink:href="#icon--email" /></svg>
-        <span class="callout__text">Contact Us</span>
+      <a href="mailto:team@astoria.digital?subject=feedback" class="site-header__contact">
+        <svg class="project__icon"><use xlink:href="#icon--email" /></svg>
+        <span class="project__text">Contact Us</span>
       </a>
-      <!-- end site header -->
+    </header>
 
-      <!-- project 1 -->
-      <div class="project__header project__header--dispatch">
-        <svg class="icon project__icon"><use xlink:href="#icon--ama" /></svg>
-        <h2 class="project__title">Volunteer Dispatch for Astoria Mutual Aid Network</h2>
-      </div>
+    <main class="content">
 
-      <p class="project__item project__description">The system that Astoria Mutual Aid Network uses to connect requests for help from neighbors with the network’s volunteers. Astoria Mutual Aid Network came about at the beginning of the pandemic, and our team was created to support their work.</p>
+      <div class="projects">
 
-      <a class="project__item project__item-site callout" href="https://astoriamutualaid.com/">
-        <svg class="icon callout__icon"><use xlink:href="#icon--link" /></svg>
-        <span class="callout__text">Astoria Mutual Aid Network</span>
-      </a>
-
-      <a class="project__item project__item-code callout" href="https://github.com/astoria-tech/volunteer-dispatch">
-        <svg class="icon callout__icon"><use xlink:href="#icon--filecode" /></svg>
-        <span class="callout__text">View Code</span>
-      </a>
-      <!-- end project 1 -->
-
-      <!-- project 2 -->
-      <div class="project__header project__header--foil">
-        <svg class="icon project__icon"><use xlink:href="#icon--policehat" /></svg>
-        <h2 class="project__title">How to file a FOIL request</h2>
-      </div>
-
-      <p class="project__item project__description">A line-by-line breakdown on how to file a Freedom of Information request in New York state.</p>
-      <a class="project__item project__item-site callout" href="https://foil.astoria.digital">
-        <svg class="icon callout__icon"><use xlink:href="#icon--link" /></svg>
-        <span class="callout__text">Live Site</span>
-      </a>
-
-      <a class="project__item project__item-code callout" href="https://github.com/astoria-tech/FOIL-Request">
-        <svg class="icon callout__icon"><use xlink:href="#icon--filecode" /></svg>
-        <span class="callout__text">View Code</span>
-      </a>
-      <!-- end project 2-->
-
-      <!-- project 3 -->
-      <div class="project__header project__header--bill project__header--last ">
-        <svg class="icon project__icon"><use xlink:href="#icon--bill" /></svg>
-        <h1 class="project__title">NYS Bill Tracker for Police Reform</h2>
+        <div class="project">
+          <div class="project__header project__header--dispatch">
+            <svg class="project__icon"><use xlink:href="#icon--ama" /></svg>
+            <h2 class="project__title">Volunteer Dispatch for Astoria Mutual Aid Network</h2>
+          </div>
+          <p class="project__description">The system that Astoria Mutual Aid Network uses to connect requests for help from neighbors with the network’s volunteers. Astoria Mutual Aid Network came about at the beginning of the pandemic, and our team was created to support their work.</p>
+          <div class="project__links">
+            <a class="project__link" href="https://astoriamutualaid.com/">
+              <svg class="project__link-icon"><use xlink:href="#icon--link" /></svg>
+              <span class="project__text">Astoria Mutual Aid Network</span>
+            </a>
+            <a class="project__link" href="https://github.com/astoria-tech/volunteer-dispatch">
+              <svg class="project__link-icon"><use xlink:href="#icon--filecode" /></svg>
+              <span class="project__text">View Code</span>
+            </a>
+          </div>
         </div>
 
-        <p class="project__item project__description"><span class="wip">WORK IN PROGRESS</span><br>This a project that keeps track of bills specific to police reform. <br>The project is in progress, it uses a table layout to show the path of each bill and which is close to being passed and which need more support.</p>
-
-        <a class="project__item project__item-site callout" href="https://bills.astoria.digital/">
-          <svg class="icon callout__icon"><use xlink:href="#icon--wiplink" /></svg>
-          <span class="callout__text">Work Site</span>
-        </a>
-
-        <a class="project__item project__item-code callout" href="https://github.com/astoria-tech/bill-tracker">
-          <svg class="icon callout__icon"><use xlink:href="#icon--filecode" /></svg>
-          <span class="callout__text">View Code</span>
-        </a>
-        <!-- end project 3 -->
-
-          <div class="project__header project__header--more">
-            <p>More projects coming...</p>
+        <div class="project">
+          <div class="project__header project__header--covid-wait-times">
+            <svg class="project__icon"><use xlink:href="#icon--caution" /></svg>
+            <h2 class="project__title">COVID-19 Testing Wait Times</h2>
           </div>
+          <p class="project__description">Data and analysis on COVID-19 testing wait times around New York City.</p>
+          <div class="project__links">
+            <a class="project__link" href="https://datastudio.google.com/u/0/reporting/1506fb15-ab88-4226-a251-59a114affd9c/page/EdRsB">
+              <svg class="project__link-icon"><use xlink:href="#icon--link" /></svg>
+              <span class="project__text">Live Site</span>
+            </a>
+            <a class="project__link" href="https://github.com/astoria-tech/nyc-covid19-testing-wait-times">
+              <svg class="project__link-icon"><use xlink:href="#icon--filecode" /></svg>
+              <span class="project__text">View Code</span>
+            </a>
+          </div>
+        </div>
 
-        </main><!-- end site-content -->
+        <div class="project">
+          <div class="project__header project__header--foil">
+            <svg class="project__icon"><use xlink:href="#icon--policehat" /></svg>
+            <h2 class="project__title">How to file a FOIL request</h2>
+          </div>
+          <p class="project__description">A line-by-line breakdown on how to file a Freedom of Information request in New York state.</p>
+          <div class="project__links">
+            <a class="project__link" href="https://foil.astoria.digital">
+              <svg class="project__link-icon"><use xlink:href="#icon--link" /></svg>
+              <span class="project__text">Live Site</span>
+            </a>
+            <a class="project__link" href="https://github.com/astoria-tech/FOIL-Request">
+              <svg class="project__link-icon"><use xlink:href="#icon--filecode" /></svg>
+              <span class="project__text">View Code</span>
+            </a>
+          </div>
+        </div>
 
-        <section class="team-link">
-          <p class="callout"><a href="./team.html"><span class="callout__text">Meet our team</span></a></p>
-        </section>
+        <div class="project">
+          <div class="project__header project__header--bill">
+            <svg class="project__icon"><use xlink:href="#icon--bill" /></svg>
+            <h2 class="project__title">NYS Bill Tracker for Police Reform</h2>
+          </div>
+          <p class="project__description"><span class="project__wip">Work in progress</span><br>This a project that keeps track of bills specific to police reform. <br>The project is in progress, it uses a table layout to show the path of each bill and which is close to being passed and which need more support.</p>
+          <div class="project__links">
+            <a class="project__link" href="https://bills.astoria.digital/">
+              <svg class="project__link-icon"><use xlink:href="#icon--wiplink" /></svg>
+              <span class="project__text">Work Site</span>
+            </a>
+            <a class="project__link" href="https://github.com/astoria-tech/bill-tracker">
+              <svg class="project__link-icon"><use xlink:href="#icon--filecode" /></svg>
+              <span class="project__text">View Code</span>
+            </a>
+          </div>
+        </div>
 
-        <footer class="site-footer">
-          <p><small>© 2020 Astoria Digital</small></p>
-        </footer>
+      </div>
 
-      </body>
-      </html>
+    </main><!-- end site-content -->
+
+    <section class="team-link">
+      <p class="project"><a href="./team.html"><span class="project__text">Meet our team</span></a></p>
+    </section>
+
+    <footer class="site-footer">
+      <p><small>© 2020 Astoria Digital</small></p>
+    </footer>
+
+  </body>
+</html>
