@@ -519,11 +519,6 @@ svg {
   height: 6em;
 }
 
-.project__link {
-  display: flex;
-  flex-flow: row wrap;
-}
-
 .project__header {
   display: flex;
   flex-flow: row nowrap;
@@ -546,14 +541,15 @@ svg {
   flex-flow: row wrap;
   align-items: center;
   width: max-content;
+  background-color: var(--highlight-yellow);
+}
+
+.project__link:hover {
+  background-color: transparent;
 }
 
 .project__link + .project__link {
   margin-top: 1em;
-}
-
-.project__link:hover {
-  background-color: var(--highlight-yellow);
 }
 
 .project__link-icon {
