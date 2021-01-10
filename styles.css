@@ -595,20 +595,15 @@ svg {
   color: var(--highlight-vellum);
 }
 
-.team-link {
-  padding: 2em 0;
-  text-align: center;
-  background-color: #000;
-  color: #fff;
-}
-
-.team-link a {
-  color: #fff;
-}
-
 /* }}} */
 
 /* Team {{{ */
+
+.team-section {
+  padding: 2em 0;
+  text-align: center;
+  border-top: 3px solid;
+}
 
 .team {
   display: flex;
@@ -639,11 +634,6 @@ svg {
 /* }}} */
 
 /* Homepage specific {{{ */
-
-
-/* }}} */
-
-/* Team page specific {{{ */
 
 
 /* }}} */
