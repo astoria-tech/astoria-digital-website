@@ -30,6 +30,7 @@ body {
 
 main {
   display: block;
+  padding-bottom: 3em;
 }
 
 /* Grouping content
