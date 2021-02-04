@@ -598,12 +598,38 @@ svg {
 
 /* }}} */
 
+/* About Us {{{ */
+
+  .aboutus-section {
+    padding: 2em;
+    border-top: 3px solid;
+  }
+
+  .aboutus {
+    max-width: 75%;
+    padding-left: 4em;
+  }
+
+  /* }}} */
+
+
+/* Contact Us {{{ */
+
+.contactus-section {
+  padding: 2em;
+}
+
+.contactus {
+  padding-left: 4em;
+}
+  
+/* }}} */
+
 /* Team {{{ */
 
 .team-section {
   padding: 2em 0;
   text-align: center;
-  border-top: 3px solid;
 }
 
 .team {
@@ -624,12 +650,15 @@ svg {
 
 /* }}} */
 
+
+
 /* Footer {{{ */
 
 .site-footer {
   padding: 4rem;
   background-color: var(--highlight-yellow);
   text-align: center;
+  border-top: 3px solid;
 }
 
 /* }}} */
