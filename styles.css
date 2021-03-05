@@ -371,6 +371,16 @@ body {
   }
 }
 
+main {
+  padding: 0 1em;
+}
+
+@media screen and (min-width: 1450px) {
+  main {
+    padding: 0;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fjalla One", sans-serif;
   font-weight: normal;
@@ -457,16 +467,8 @@ section:first-child {
   margin: 0 auto;
 }
 
-.projects-content,
-.aboutus-content {
-  padding: 0 2em;
-}
-
-@media screen and (min-width: 1440px) {
-  .projects-content,
-  .aboutus-content {
-    padding: 0 5.5em;
-  }
+.site-header {
+  max-width: 2000px;
 }
 
 /* }}} */
@@ -515,7 +517,6 @@ section:first-child {
   margin: 0;
   font-size: 3rem;
   background-color: var(--highlight-yellow);
-  border-bottom: 3px solid;
 }
 
 .site-header__slogan {
@@ -538,13 +539,12 @@ section:first-child {
 
   .site-header__title {
     border-right: 3px solid;
-    border-bottom: none;
-    flex:2;
+    flex: 2;
   }
 
   .site-header__slogan {
     text-align: left;
-    flex:1;
+    flex: 1;
   }
 }
 
@@ -561,35 +561,22 @@ section:first-child {
 .project {
   width: 100%;
   border: 3px solid;
+  margin-bottom: 2em;
+  flex: 1 1 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em;
 }
 
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 930px) {
   .project {
-    width: calc(50% - 1em);
+    flex: 0 1 calc(50% - 1em);
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1361px) {
   .project {
-    width: calc(50% - 2.75em);
-    margin-bottom: 5.5em;
+    flex: 0 1 438px;
   }
-}
-
-.project:first-child:nth-last-child(2),
-.project:first-child:nth-last-child(2) ~ .project,
-.project:first-child:nth-last-child(4),
-.project:first-child:nth-last-child(4) ~ .project,
-.project:first-child:nth-last-child(8),
-.project:first-child:nth-last-child(8) ~ .project,
-.project:first-child:nth-last-child(10),
-.project:first-child:nth-last-child(10) ~ .project,
-.project:first-child:nth-last-child(14),
-.project:first-child:nth-last-child(14) ~ .project {
-  flex: 1 1 450px;
 }
 
 .project__header,
@@ -692,7 +679,6 @@ section:first-child {
 
 /* }}} */
 
-
 /* Contact Us {{{ */
   
 /* }}} */
@@ -732,8 +718,6 @@ section:first-child {
 }
 
 /* }}} */
-
-
 
 /* Footer {{{ */
 
@@ -775,11 +759,6 @@ section:first-child {
     font-size: 2.5rem;
   }
 }
-
-/* }}} */
-
-/* Homepage specific {{{ */
-
 
 /* }}} */
 
