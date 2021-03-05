@@ -569,6 +569,12 @@ section:first-child {
 
 @media screen and (min-width: 930px) {
   .project {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+
+@media screen and (min-width: 1361px) {
+  .project {
     flex: 0 1 438px;
   }
 }
