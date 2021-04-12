@@ -707,11 +707,12 @@ section:first-child {
   .team {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: start;
   }
 
   .team__member {
     width: calc(33.33% - 1em);
+    margin: 0.5em;
   }
 }
 
